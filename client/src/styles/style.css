@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  background: url("./images/heart-locket.jpg") no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+}
+.bg-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.title {
+  padding-top: 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+}
+.spl__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  /* background: linear-gradient(
+    45deg,
+    gold 30%,
+    goldenrod 40%,
+    gold 80%,
+    goldenrod 100%
+  );
+  background-clip: text; */
+  color: gold;
+}
+.guide__title {
+  margin-top: 0.5em;
+  align-items: center;
+  margin-left: 1em;
+  max-width: 80vw;
+  text-transform: capitalize;
+  /* background: linear-gradient(
+    45deg,
+    rgb(218, 40, 40) 15%,
+    red 30%,
+    rgb(255, 48, 89) 100%
+  );
+  background-clip: text; */
+  color: crimson;
+}
+.description {
+  margin-top: 1em;
+  margin-left: 10vw;
+  max-width: 80vw;
+  font-weight: bolder;
+}
+form {
+  background: rgba(0, 0, 0, 0);
+  max-width: 500px;
+  margin-inline: 1em;
+  margin-block: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+form > * {
+  width: 200px;
+  padding-block: 0.2em;
+  margin-bottom: 0.25em;
+}
+form > label {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+form > input {
+  border-radius: 5px;
+  color: crimson;
+  text-indent: 10px;
+  font-weight: 500;
+  font-size: 1em;
+  outline-style: none;
+  border-style: none;
+}
+button {
+  margin-top: 2em;
+  padding: 0.5em;
+  max-width: 100px;
+  font-weight: bolder;
+  background: crimson;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background: white;
+  color: crimson;
+}
+.bg__content {
+  background: url("./images/heart-rain.jpg") no-repeat center;
+  min-height: 100vh;
+  background-size: cover;
+  object-fit: none;
+  object-position: right;
+}
+.result__para {
+  font-size: 2em;
+  color: gold;
+}
+.bg-result__overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.result__para {
+  max-width: 400px;
+  padding: 10vw;
+  font-weight: 600;
+  font-size: large;
+  background-clip: text;
+}
+.result__btn {
+  position: relative;
+  /* text-align: center; */
+  left: 35vw;
+}
+.top__space {
+  padding-top: 1em;
+}
+.result__disclaimer {
+  margin-top: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.disclaimer__stmt {
+  text-align: center;
+  margin-top: 1em;
+  font-size: small;
+  padding-inline: 5vw;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    font-size: medium;
+  }
+  form {
+    padding-top: 0em;
+    padding-left: 10em;
+  }
+  .guide__title {
+    text-align: center;
+    padding-left: 4em;
+  }
+}
