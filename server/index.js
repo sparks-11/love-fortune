@@ -7,18 +7,19 @@ const data = require('./data')
 const app = express();
 
 const PORT = process.env.PORT || 1337
-app.listen(PORT, () => {
-  console.log(`the server started on localhost:${PORT}`)
-})
 
 mongoose.connect(process.env.dbURL, () => {
-    console.log("the server is connected")
+  app.listen(PORT, () => {
+  console.log(`the server started on localhost:${PORT}`)
+  })
 })
-
 
 app.use(cors())
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.send("this is working you dumbass!")
+})
 
 app.post('/api/result', async (req, res) => {
   const  fortune = data[Math.floor(Math.random() * 31)]

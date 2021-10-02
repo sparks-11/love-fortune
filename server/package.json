@@ -13,8 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app"
+    "start": "node index.js",
+    "dev": "nodemon index"
   },
   "keywords": [],
   "author": "",
